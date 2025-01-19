@@ -7,7 +7,7 @@ function BackToTop() {
   // show back-to-top button when scrolled down
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 300) {
+      if (window.scrollY > 500) {
         setShowButton(true);
       } else {
         setShowButton(false);
@@ -22,16 +22,16 @@ function BackToTop() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  if (showButton) {
-    return (
-      <button
-        onClick={scrollToTop}
-        className="fixed bottom-5 right-5 border border-gray-300 hover:border-gray-800 p-3 rounded-full focus:outline-none animate-bounce"
-      >
-        <ChevronsUp size={24} color="#111827" />
-      </button>
-    );
-  }
+  return (
+    <button
+      onClick={scrollToTop}
+      className={`${
+        showButton ? "opacity-100" : "opacity-0"
+      } group text-gray-900 fixed bottom-5 right-5 bg-gray-50/10 backdrop-blur border border-gray-300 hover:border-gray-800 p-3 rounded-full focus:outline-none animate-bounce z-50`}
+    >
+      <ChevronsUp size={24} />
+    </button>
+  );
 }
 
 export default BackToTop;

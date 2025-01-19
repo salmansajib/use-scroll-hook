@@ -1,10 +1,11 @@
 import ScrollAnimation from "./components/ScrollAnimation";
 import Progressbar from "./components/Progressbar";
 import BackToTop from "./components/BackToTop";
+import { ArrowDown } from "lucide-react";
 
 function App() {
   return (
-    <div className="min-h-[300vh] relative">
+    <div className="min-h-[300vh] bg-gray-50 relative">
       {/* Progress bar */}
       <Progressbar />
 
@@ -13,8 +14,13 @@ function App() {
 
       <main>
         <div className="min-h-[100vh]">
-          <h1 className="text-7xl font-semibold text-center pt-10">
-            Scroll Down
+          <h1 className="text-7xl font-semibold text-center pt-[7rem] space-y-5">
+            <span>Scroll Down</span>
+            <ArrowDown
+              className="text-center w-full animate-bounce"
+              size={36}
+              strokeWidth={3}
+            />
           </h1>
         </div>
         <ScrollAnimation />
