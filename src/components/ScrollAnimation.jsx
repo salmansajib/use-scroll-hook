@@ -18,7 +18,7 @@ function ScrollAnimation() {
     <div className="min-h-[100vh] flex items-center justify-center">
       <motion.div
         style={{ scale }}
-        className="w-[60vw] h-[500px] bg-blue-700 rounded-[1rem]"
+        className="w-[60vw] h-[400px] bg-blue-500 rounded-[1rem]"
       ></motion.div>
     </div>
   );

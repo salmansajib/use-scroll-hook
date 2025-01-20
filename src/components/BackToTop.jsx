@@ -27,7 +27,7 @@ function BackToTop() {
       onClick={scrollToTop}
       className={`${
         showButton ? "opacity-100" : "opacity-0"
-      } group text-gray-900 fixed bottom-5 right-5 bg-gray-50/10 backdrop-blur border border-gray-300 hover:border-gray-800 p-3 rounded-full focus:outline-none animate-bounce z-50`}
+      } group text-violet-50 fixed bottom-5 right-5 bg-gray-50/10 backdrop-blur border border-gray-500 hover:border-gray-100 p-3 rounded-full focus:outline-none animate-bounce z-50`}
     >
       <ChevronsUp size={24} />
     </button>

@@ -5,7 +5,7 @@ function Progressbar() {
 
   return (
     <motion.div
-      className="fixed top-0 left-0 h-2 w-full bg-red-400 z-50 origin-left"
+      className="fixed top-0 left-0 h-2 w-full bg-gradient-to-r from-rose-300 to-indigo-400 z-50 origin-left"
       style={{ scaleX: scrollYProgress }}
     />
   );
