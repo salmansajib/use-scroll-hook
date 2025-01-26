@@ -65,8 +65,9 @@ function App() {
                     textLength="940"
                   >
                     scroll down to see the hook
-                    <tspan className="text-2xl">&bull;</tspan>motion use scroll
-                    in action <tspan className="text-2xl">&bull;</tspan>
+                    <tspan className="text-2xl font-bold">&bull;</tspan>
+                    motion use scroll in action{" "}
+                    <tspan className="text-2xl font-bold">&bull;</tspan>
                   </textPath>
                 </text>
               </g>
@@ -75,7 +76,7 @@ function App() {
         </div>
         <ScrollAnimation />
         <div className="min-h-[100vh] grid place-content-center">
-          <h2 className="text-transparent bg-gradient-to-r from-rose-300 to-indigo-400 bg-clip-text text-3xl w-full max-w-[500px] font-medium capitalize leading-tight text-center">
+          <h2 className="text-transparent bg-gradient-to-r from-rose-300 to-indigo-400 bg-clip-text text-xl w-full max-w-[500px]  capitalize leading-tight text-center">
             Click on the button to go back to the top of the page.
           </h2>
         </div>
